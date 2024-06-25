@@ -39,8 +39,10 @@ FROM international_debt;
 SELECT COUNT(DISTINCT country_name) AS total_distinct_countries
 FROM international_debt;
 ```
-![image](https://github.com/NguyenMav/DataCamp_SQL_Beginner_International_Debt/assets/149219810/bd8a7e00-12bd-49cb-a2b3-e7fba011455a)
 
+| total_distinct_countries |
+|--------------------------|
+| 124                      |
 
 ### What country has the highest amount of debt?
 ```sql
@@ -51,8 +53,10 @@ GROUP BY country_name
 ORDER BY total_debt DESC
 LIMIT 1;
 ```
-![image](https://github.com/NguyenMav/DataCamp_SQL_Beginner_International_Debt/assets/149219810/da199bcf-73bb-4904-806b-66b99895546f)
 
+| country_name | total_debt   |
+|--------------|--------------|
+| China        | 2.85793E+11  |
 
 ### What country has the lowest amount of repayments?
 ```sql
@@ -63,4 +67,7 @@ WHERE indicator_code = 'DT.AMT.DLXF.CD'
 ORDER BY lowest_repayment ASC
 LIMIT 1;
 ```
-![image](https://github.com/NguyenMav/DataCamp_SQL_Beginner_International_Debt/assets/149219810/b01349e5-a307-4388-9816-667001cbfefe)
+| country_name | indicator_name                                                      | lowest_repayment |
+|--------------|----------------------------------------------------------------------|------------------|
+| Timor-Leste  | Principal repayments on external debt, long-term (AMT, current US$) | 825,000          |
+
