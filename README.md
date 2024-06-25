@@ -1,4 +1,4 @@
-#Project: Analyze International Debt Statistics (SQL Beginner)
+# Project: Analyze International Debt Statistics (SQL Beginner)
 
 Humans not only take debts to manage necessities. A country may also take debt to manage its economy. For example, infrastructure spending is one costly ingredient required for a country's citizens to lead comfortable lives. The World Bank is the organization that provides debt to countries.
 
